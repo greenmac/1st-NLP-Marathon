@@ -16,3 +16,9 @@
 4.CkipTagger 優勢
     在繁體中文上斷詞與詞性標記的表現進一步提升，並超越結巴系統
     結合實體命名：目前 CkipTagger 能辨識 11 類一般領域專有名詞及 7 類數量詞
+
+5.numpy.prod()，这du个函数是连乘操作
+    a = numpy.array([1,2,3,4])
+    numpy.prod(a) = 24
+    numpy.prod(a[2:3]) = 3#所有的区间都是左闭右开的，所以只有3了
+    numpy.prod(a[1:3]) = 6。
