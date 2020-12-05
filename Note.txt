@@ -22,3 +22,30 @@
     numpy.prod(a) = 24
     numpy.prod(a[2:3]) = 3#所有的区间都是左闭右开的，所以只有3了
     numpy.prod(a[1:3]) = 6。
+6.Part Of Speech (POS)
+    詞類(POS)：每種語言都由許多詞類組成，例如動詞，名詞，副詞，形容詞等
+    詞性標註(Part Of SpeechTagging)，簡單來說就是將文章、句子中，文字的詞類標註出來，為NLP 任務中相當重要的技術之一。
+    ．標註原理:
+        POS 標註任務中，信息擴展基於詞本身的內在信息和基於某些的外在信息，換而言之，當我們在決定單詞的詞性前，除了考慮單詞本身，也要考慮前後單詞與整句話。
+    ．標註意義:
+        詞性標註能在許多 NLP 的任務中提供低層次的語義信息。
+7.POS-tagging 應用
+    ．用於模型輸入特徵：提供單詞與鄰近單詞的訊息，以利進一步分析與處理。
+    ．提供句法結構的訊息，可用來做相似度判斷等應用。
+    ．詞幹提取(stemming)：去除詞綴得到詞根
+8.POS-分類
+    ．closed class：通常為相對固定的詞類，不太會有新的詞類出現
+        Ex.pronouns: she, he, I
+            preposition: on, under, by
+    ．open class：容易有新詞被創造，如名詞、動詞、形容詞等等
+9.POS Tagging 常見算法
+    ．Lexical Based Methods：直接使用訓練詞庫中該單詞最常見的詞性作為標註。
+    ．Rule-Based Methods ：使用自訂的 rules 來標記單詞，如看到 ed、i 就標注 verb。
+    ．Probabilistic Methods ：使用條件機率的原理，預測單詞詞性，常見如 CRF、HMM，此方法也是深度學習出來前，最常見且效果最好的標注方式。
+    ．Deep Learning Methods  ：使用深度學習模型預測標註詞性。
+    在Pos Tagging中，Probabilistic Methods 是最常見且效果相當好的一種方式，其中又以HMM最為常見。
+10.HMM(隱藏式馬可夫模型 Hidden Markov Model)
+    HMM 主要可以用來解決三種經典的問題
+    ．預測(filter) : 已知模型參數和某一特定輸出序列，求最後時刻各個隱含狀態的機率分布，通常使用前向演算法解決(置信狀態指根據既往證據推算出的當前狀態的機率分布。 這個過程也被叫做「濾波」)
+    ．平滑(smoothing)：已知模型參數和某一特定輸出序列，求中間時刻各個隱含狀態的機率分布，通常使用前向-後向演算法解決
+    ．解碼(most likely explanation) : 已知模型參數，尋找最可能的能產生某一特定輸出序列的隱含狀態的序列，通常使用Viterbi演算法解決
