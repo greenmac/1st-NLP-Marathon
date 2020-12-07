@@ -50,3 +50,4 @@
     ．平滑(smoothing)：已知模型參數和某一特定輸出序列，求中間時刻各個隱含狀態的機率分布，通常使用前向-後向演算法解決
     ．解碼(most likely explanation) : 已知模型參數，尋找最可能的能產生某一特定輸出序列的隱含狀態的序列，通常使用Viterbi演算法解決
 11.nltk.word_tokenize提供不只用空排符號斷詞, 像是'.'也可以斷
+12.通常來說 Lemmatization 相較於 Stemming 會是更好的選擇，然而 Stemming 的優勢在於其所需運算較少，因此”速度較快”。
