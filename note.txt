@@ -1,0 +1,18 @@
+．set.union(set1, set2...)
+https://www.runoob.com/python3/ref-set-union.html
+x = {"a", "b", "c"}
+y = {"f", "d", "a"}
+z = {"c", "d", "e"}
+result = x.union(y, z)
+print(result)
+=>{'c', 'd', 'f', 'e', 'b', 'a'}
+
+．dict.fromkeys(seq[, value]))
+https://www.runoob.com/python/att-dictionary-fromkeys.html
+seq = ('Google', 'Runoob', 'Taobao')
+dict = dict.fromkeys(seq)
+print("New Dictionary : %s" %  str(dict))
+dict = dict.fromkeys(seq, 10)
+print("New Dictionary : %s" %  str(dict))
+=>New Dictionary : {'Google': None, 'Taobao': None, 'Runoob': None}
+=>New Dictionary : {'Google': 10, 'Taobao': 10, 'Runoob': 10}
