@@ -16,3 +16,17 @@ dict = dict.fromkeys(seq, 10)
 print("New Dictionary : %s" %  str(dict))
 =>New Dictionary : {'Google': None, 'Taobao': None, 'Runoob': None}
 =>New Dictionary : {'Google': 10, 'Taobao': 10, 'Runoob': 10}
+
+．numpy.sqrt(arr, out=None) - 平方根
+https://www.delftstack.com/zh-tw/api/numpy/python-numpy-sqrt/
+import numpy as np
+arr = [1, 9, 25, 49]
+arr_sqrt = np.sqrt(arr)
+print(arr_sqrt)
+=>[1, 3, 5, 7]
+
+．np.dot()
+https://blog.csdn.net/zenghaitao0128/article/details/78715140
+对于秩为1的数组，执行对应位置相乘，然后再相加；
+对于秩不为1的二维数组，执行矩阵乘法运算；超过二维的可以参考numpy库介绍
+
