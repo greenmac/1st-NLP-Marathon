@@ -74,3 +74,6 @@ PCA（principal component analysis）主成份分析
 
 ．機器學習: 降維(Dimension Reduction)- 線性區別分析( Linear Discriminant Analysis)
 https://chih-sheng-huang821.medium.com/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E9%99%8D%E7%B6%AD-dimension-reduction-%E7%B7%9A%E6%80%A7%E5%8D%80%E5%88%A5%E5%88%86%E6%9E%90-linear-discriminant-analysis-d4c40c4cf937
+
+．KNN 雖然被歸類為監督式學習，但當我們了解後可以發現 KNN 是透過記住訓練集資料的位置，
+在預測時透過比對預測資料與訓練集樣本的距離決定最終預測結果，所以並沒有真正『訓練的過程』。
