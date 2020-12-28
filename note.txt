@@ -53,4 +53,24 @@ dataset = np.delete(arr, [1,2], axis=1)
 print(dataset)
 =>array([[ 1, 4], 
     [ 5, 8], 
-    [ 9, 12]]) 
+    [ 9, 12]])
+
+．NLP領域中常見的文章分類，垃圾郵件分類等問題都可以藉由KNN解決。
+
+．淺談降維方法中的 PCA 與 t-SNE
+https://medium.com/d-d-mag/%E6%B7%BA%E8%AB%87%E5%85%A9%E7%A8%AE%E9%99%8D%E7%B6%AD%E6%96%B9%E6%B3%95-pca-%E8%88%87-t-sne-d4254916925b
+在機器學習當中，如果特徵數過多時，有可能會造成一些問題，像是：
+1.過擬合 (overfitting)
+2.處理速度較慢
+3.如果超過三個特徵以上不好視覺化
+PCA（principal component analysis）主成份分析
+在介紹 PCA 之前，我們先來定義一下我們的目標是什麼：
+將一個具有 n 個特徵空間的樣本，轉換為具有 k 個特徵空間的樣本，其中 k < n
+    1.將數據標準化
+    2.建立共變異數矩陣（covariance matrix）
+    3.利用奇異值分解（SVD）求得特徵向量（eigenvector）跟特徵值（eigenvalue）
+    4.通常特徵值會由大到小排列，選取 k 個特徵值與特徵向量
+    5.將原本的數據投影（映射）到特徵向量上，得到新的特徵數
+
+．機器學習: 降維(Dimension Reduction)- 線性區別分析( Linear Discriminant Analysis)
+https://chih-sheng-huang821.medium.com/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E9%99%8D%E7%B6%AD-dimension-reduction-%E7%B7%9A%E6%80%A7%E5%8D%80%E5%88%A5%E5%88%86%E6%9E%90-linear-discriminant-analysis-d4c40c4cf937
